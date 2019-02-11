@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Cash in Hand"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:ems="10"
+                        android:background="@drawable/back"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Select Source"
+                        android:gravity="center"
+                        android:textSize="22sp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp" />
+
+
+                    <Spinner
+                        android:id="@+id/csource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"></Spinner>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp" />
+
+                        <EditText
+                        android:id="@+id/hamnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editext_border"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:hint="Enter Amount"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp" />
+
+                        <Button
+                            android:id="@+id/hbnkadd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="sans-serif"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="Add"
+                            android:textColor="#ffffff"
+                            android:textSize="26dp" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

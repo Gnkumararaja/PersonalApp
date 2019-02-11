@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Add Bank"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"
+            android:textSize="25dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/bnkname"
+                    android:background="@drawable/editext_border"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="Enter Bank Name"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+
+
+                <EditText
+                    android:id="@+id/amnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/editext_border"
+                    android:hint="Enter Amount"
+                    android:singleLine="true"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+                <Button
+                    android:id="@+id/bnkadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif"
+                    android:text="Add"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

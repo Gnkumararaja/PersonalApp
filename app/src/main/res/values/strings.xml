@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Crebited</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nameApp">Crebited</string>
+
+    <string name="tbaln">Total Available Balance :</string>
+    <string name="button1">Mini Statement</string>
+    <string name="button2">Details</string>
+    <string name="db">Debit</string>
+    <string name="spinnertitle">Select bank</string>
+    <string name="cr">Credit</string>
+    <string name="addbnk">Add Money</string>
+</resources>

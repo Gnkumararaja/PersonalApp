@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <!-- <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cr"
+                android:textColor="#ffffff"
+                android:textSize="44dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="175dp"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Enter Amount"
+                    android:layout_weight="1"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>-->
+
+                <EditText
+                    android:hint="Enter Amount"
+                    android:id="@+id/ed_amt"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:ems="10"
+                    android:background="@drawable/editext_border"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Select Date"
+                    android:textSize="22dp" />-->
+
+                <EditText
+                    android:hint="Enter Date"
+                    android:id="@+id/ed_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif-condensed"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:background="@drawable/editext_border"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />-->
+
+                <EditText
+                    android:hint="Enter Description"
+                    android:id="@+id/ed_desc"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:background="@drawable/editext_border"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Choose Account"
+                    android:textSize="dp" />-->
+
+                <Spinner
+                    android:id="@+id/ed_combo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="3dp">
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btnAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="@android:color/white"
+                    android:textSize="24dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@id/btnReset"
+                    android:layout_marginBottom="10dp"
+                    />
+                </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
